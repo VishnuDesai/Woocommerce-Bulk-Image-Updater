@@ -25,7 +25,7 @@ public class UpdateImages {
 	}
 
 	public void readProducts() throws Exception {
-		String sql = "SELECT Post_ID,Meta_Value FROM WP_PostMeta WHERE meta_key LIKE '_sku' AND Meta_Value like 'TM%'";
+		String sql = "SELECT Post_ID,Meta_Value FROM WP_PostMeta WHERE meta_key LIKE '_sku' ";
 		PreparedStatement preparedStmt = null;
 		ResultSet rs = null;
 		try {
